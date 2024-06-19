@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS tienda;
+
+USE tienda;
+
+CREATE TABLE productos (
+    idProducto INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(500) NOT NULL,
+    descripcion LONGTEXT,
+    precio INT NOT NULL,
+    creacion DATETIME(6) DEFAULT CURRENT_TIMESTAMP(6)
+);
